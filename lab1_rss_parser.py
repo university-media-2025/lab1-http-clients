@@ -52,3 +52,4 @@ def get_alternative_news_rss(limit=None):
 
 
 pprint.pprint(get_alternative_news_rss(limit=3))
+pprint.pprint(get_alternative_news_rss(limit=5))
