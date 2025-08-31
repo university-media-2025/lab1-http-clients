@@ -1,5 +1,6 @@
 """Парсинг новостных RSS-лент."""
 
+import pprint
 import requests
 from xml.etree import ElementTree as ET
 
@@ -48,3 +49,6 @@ def get_alternative_news_rss(limit=None):
 
     print('Все источники недоступны')
     return []
+
+
+pprint.pprint(get_alternative_news_rss(limit=3))
